@@ -1,0 +1,203 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="container">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'end_year')"
+        >
+          <option value="" selected>End Year Filter</option>
+          <option
+            *ngFor="let endYear of masterOptionList?.end_year"
+            [value]="endYear"
+          >
+            {{ endYear }}
+          </option>
+        </select>
+      </div>
+      <div class="container mt-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'start_year')"
+        >
+          <option value="" selected>Start Year Filter</option>
+          <option
+            *ngFor="let startYear of masterOptionList?.start_year"
+            [value]="startYear"
+          >
+            {{ startYear }}
+          </option>
+        </select>
+      </div>
+      <div class="container mt-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'topic')"
+        >
+          <option value="" selected>Topic Filter</option>
+          <option *ngFor="let topic of masterOptionList?.topic" [value]="topic">
+            {{ topic }}
+          </option>
+        </select>
+      </div>
+      <div class="container mt-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'country')"
+        >
+          <option value="" selected>Country Filter</option>
+          <option
+            *ngFor="let country of masterOptionList?.country"
+            [value]="country"
+          >
+            {{ country }}
+          </option>
+        </select>
+      </div>
+      <div class="container mt-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'impact')"
+        >
+          <option value="" selected>Impact Filter</option>
+          <option
+            *ngFor="let impact of masterOptionList?.impact"
+            [value]="impact"
+          >
+            {{ impact }}
+          </option>
+        </select>
+      </div>
+      <div class="container mt-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'insight')"
+        >
+          <option value="" selected>Insight Filter</option>
+          <option
+            *ngFor="let insight of masterOptionList?.insight"
+            [value]="insight"
+          >
+            {{ insight }}
+          </option>
+        </select>
+      </div>
+      <div class="container mt-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'intensity')"
+        >
+          <option value="" selected>Intensity Filter</option>
+          <option
+            *ngFor="let intensity of masterOptionList?.intensity"
+            [value]="intensity"
+          >
+            {{ intensity }}
+          </option>
+        </select>
+      </div>
+      <div class="container mt-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'likelihood')"
+        >
+          <option value="" selected>Likelihood Filter</option>
+          <option
+            *ngFor="let likelihood of masterOptionList?.likelihood"
+            [value]="likelihood"
+          >
+            {{ likelihood }}
+          </option>
+        </select>
+      </div>
+      <div class="container mt-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'pestle')"
+        >
+          <option value="" selected>Pestle Filter</option>
+          <option
+            *ngFor="let pestle of masterOptionList?.pestle"
+            [value]="pestle"
+          >
+            {{ pestle }}
+          </option>
+        </select>
+      </div>
+      <div class="container mt-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'region')"
+        >
+          <option value="" selected>Region Filter</option>
+          <option
+            *ngFor="let region of masterOptionList?.region"
+            [value]="region"
+          >
+            {{ region }}
+          </option>
+        </select>
+      </div>
+      <div class="container mt-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'relevance')"
+        >
+          <option value="" selected>Relevance Filter</option>
+          <option
+            *ngFor="let relevance of masterOptionList?.relevance"
+            [value]="relevance"
+          >
+            {{ relevance }}
+          </option>
+        </select>
+      </div>
+      <div class="container mt-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'sector')"
+        >
+          <option value="" selected>Sector Filter</option>
+          <option
+            *ngFor="let sector of masterOptionList?.sector"
+            [value]="sector"
+          >
+            {{ sector }}
+          </option>
+        </select>
+      </div>
+      <div class="container mt-2">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          (change)="filterApply($event, 'source')"
+        >
+          <option value="" selected>Source Filter</option>
+          <option
+            *ngFor="let source of masterOptionList?.source"
+            [value]="source"
+          >
+            {{ source }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <h4>SWOT Analysis:</h4>
+      <!--<pre>{{ jsonData | json }}</pre> -->
+      <app-scatter-plot [data]="jsonData?.data"></app-scatter-plot>
+    </div>
+  </div>
+</div>

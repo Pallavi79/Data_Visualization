@@ -1,0 +1,24 @@
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .brand a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .heading {
+    color: #fff;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  
+  
