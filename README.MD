@@ -1,6 +1,6 @@
--This project aims to visualize the data provided by a JSON file.
--This project uses different filters to filter the data and get a statistical idea about the data.
--Technologies Used: Node.js, MongoDB, D3.js, Angular
--To run this Project clone it.
--Configure the port and database configuration in the config file.
+-This project aims to visualize the data provided by a JSON file.\
+-This project uses different filters to filter the data and get a statistical idea about the data.\
+-Technologies Used: Node.js, MongoDB, D3.js, Angular.\
+-To run this Project clone it.\
+-Configure the port and database configuration in the config file.\
 -Run both the backend and the front end code. 
